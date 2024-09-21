@@ -8,6 +8,8 @@ let age = prompt('Сколько тебе лет?', 100);
         }
     }
 let teach = confirm('Хочешь учить js?')
-if(teach == true){
+if(teach){
     alert('Супер!')
+}else {
+    alert("Не хорошо!")
 }
