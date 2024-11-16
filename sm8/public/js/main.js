@@ -1,30 +1,30 @@
-const func = (entries, observer) => { //для чего observer?
+const func = (entries) => {
   entries.forEach(entry => {
       if (entry.isIntersecting) {
-          const modal = document.getElementById("modal"); //подключаю модальное окно
+          const modal = document.getElementById("modal"); 
           
-          modal.showModal(); //открывает диалог
-          document.body.style.overflow = 'hidden'; //отключает скролинг
+          modal.showModal();
+          document.body.style.overflow = 'hidden';
 
 
-          let count = 5;
-          const closeBtn = document.getElementById("closeBtn"); //подключаю кнопку закрытия
-          const counter = document.getElementById("counter"); //подключаю div счета
+          let count = 2;
+          const closeBtn = document.getElementById("closeBtn"); 
+          const counter = document.getElementById("counter"); 
           const df = document.getElementById("df");
-          counter.innerHTML = count; //Устанавливаю значение 5
+          counter.innerHTML = count;
           closeBtn.hidden = true;
 
           setInterval(() => {
-              if (count > 0) { //если счет больше 0
-                  count = count - 1; //вычитает 1
-                  counter.innerHTML = count; //подключает новое значение
+              if (count > 0) {
+                  count = count - 1; 
+                  counter.innerHTML = count; 
                   
               } else {
                   df.style.display = 'none'; 
                   closeBtn.hidden = false;
-                  closeBtn.addEventListener('click', () => { //кнопка закрыть теперь работает
-                      document.body.style.overflow = ''; //вкючает скролинг
-                      modal.close(); //закрывает диалог
+                  closeBtn.addEventListener('click', () => { 
+                      document.body.style.overflow = '';
+                      modal.close();
                       
                       
                   });
@@ -39,5 +39,5 @@ const options = {
   threshold: 0,
 }
   
-const observer = new IntersectionObserver(func, options); //хз
-observer.observe(document.querySelector('#point')) //при наблюдении выполнять
+const observer = new IntersectionObserver(func, options);
+observer.observe(document.querySelector('#point')) 

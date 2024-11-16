@@ -6,8 +6,8 @@ body {
 
 body {
   position: relative;
-  background: #151515;
-  color: #fff;
+  background: #ebebeb;
+  color: #79b5ec;
 }
 .container{
     max-width: 1440px;
@@ -20,7 +20,7 @@ body {
     align-items: center;
 }
 .burger{
-    background-color: brown;
+    background-color: black;
     display: flex;
     padding: 10px;
     border-radius: 10px;
@@ -61,7 +61,7 @@ body {
 
 #delete-profile{
    width: 250px;
-    background-color: red;
+    background-color: #79b5ec;
     border-radius: 10px;
     color: #fff;
     font-size: 20px;
