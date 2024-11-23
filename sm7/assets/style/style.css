@@ -25,18 +25,6 @@ button {
     padding: 10px 10px;
 }
 
-.header {
-    width: 100%;
-    
-    background-color:  rgb(145, 202, 174);
-}
-
-.header-inner {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-}
-
 .header-text {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -64,7 +52,7 @@ button {
 }
 
 .profile-img {
-    width: 10rem;
+    width: 12rem;
 }
 
 .modal-window {
@@ -99,7 +87,7 @@ button {
     display: none;
 }
 
-.accordion {
+.cnopka {
     background-color: white;
     border-color: black;
     cursor: pointer;
@@ -112,11 +100,11 @@ button {
     margin-bottom: 20px;
   }
   
-.active, .accordion:hover {
+.active, .cnopka:hover {
     background-color: darkgrey; 
 }
   
-.panel {
+.fish {
     padding: 0 18px;
     display: none;
     background-color: white;
@@ -125,12 +113,12 @@ button {
 
 
 .bar {
-    width: 60px;
+    width: 90px;
     transition: all 0.3s ease-in-out;
     background-color: rgb(145, 202, 174);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
@@ -150,4 +138,76 @@ button {
 .bar-btn:hover {
     background-color: black;
     color: white; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100vw;
+    background-color: rgb(166, 238, 125);
+}
+
+.header-inner {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.main-inner {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.main-text {
+    font-size: 34px;
+}
+
+.footer {
+    width: 100vw;
+    background-color: grey;
+}
+
+.footer-inner {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.modal {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border: none;
+
+    padding: 20px;
+    outline: none;
+    position: relative;
+    top: auto;
+}
+
+.df {
+    display: flex;
+    gap: 5px;
+}
+
+.img {
+    height: 360px;
+    width: 360px;
+}
+
+.boo {
+    font-size: 24px;
+}
+
+.closeBtn {
+    border: none;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 5px 1px 5px 1px;
 }

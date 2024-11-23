@@ -7,7 +7,8 @@ body {
 body {
   position: relative;
   background: #ebebeb;
-  color: #79b5ec;
+  color: #1bb962;
+  
 }
 .container{
     max-width: 1440px;
@@ -61,7 +62,7 @@ body {
 
 #delete-profile{
    width: 250px;
-    background-color: #79b5ec;
+    background-color: #13cc51;
     border-radius: 10px;
     color: #fff;
     font-size: 20px;
@@ -113,7 +114,7 @@ body {
     
 }
 .modal__buttons button{
-    background-color: #151515;
+    background-color: #43e623;
     color: #fff;
     padding: 10px;
     border-radius: 10px;
