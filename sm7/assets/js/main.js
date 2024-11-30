@@ -34,7 +34,7 @@ const func = (entries) => {
           document.body.style.overflow = 'hidden';
 
 
-          let count = 10;
+          let count = 3;
           const closeBtn = document.getElementById("closeBtn"); 
           const counter = document.getElementById("counter"); 
           const df = document.getElementById("df");

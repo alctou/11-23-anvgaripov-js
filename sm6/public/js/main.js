@@ -57,3 +57,5 @@ function closeMenu() {
   modal.classList.remove('openburger');
   console.log(menu)
 }
+document.getElementById('deleteProfile').addEventListener('click', () => content.style.display = 'none');
+document.getElementById('deleteProfile').addEventListener('click', () => myModal.style.display = 'none');
